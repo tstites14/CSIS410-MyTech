@@ -1,0 +1,31 @@
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    margin: 4em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.menuList li {
+    text-align: center;
+    list-style: none;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.menuList li button {
+    background-color: lightgray;
+
+    font-size: 1em;
+
+    padding: 1em;
+    border-radius: 2em;
+}
+.menuList li button:hover {
+    background-color: gray;
+}
+.menuList li button:active {
+    background-image: linear-gradient(to bottom, grey, lightgrey);
+}
