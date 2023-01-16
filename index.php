@@ -22,5 +22,9 @@
                 <li><button>Module 8, Week 8: CMS Database</button></li>
             </ul>
         </div>
+        <footer class= 'footer'>
+            <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("index.php")) ?></p>
+            <p>Copyright © 2023 Theodore Stites</p>
+        </footer>
     </body>
 </html>

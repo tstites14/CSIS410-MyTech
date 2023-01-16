@@ -29,3 +29,10 @@
 .menuList li button:active {
     background-image: linear-gradient(to bottom, grey, lightgrey);
 }
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+    height: 5em;
+}
