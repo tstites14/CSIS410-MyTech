@@ -1,0 +1,54 @@
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightslategray;
+
+    height: 90%
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/*MenuList*/
+.menuList li {
+    text-align: center;
+    list-style: none;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.menuList li a {
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+
+    padding: 1em;
+    border-radius: 2em;
+}
+.menuList li a:hover {
+    background-color: lightgrey;
+    background-image: none;
+}
+.menuList li a:active {
+    background-color: grey;
+    background-image: none;
+}
+
+/*Footer*/
+.footer {
+    background-color: gray;
+
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    height: 5em;
+}
