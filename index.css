@@ -23,19 +23,22 @@
     margin-top: 1em;
     margin-bottom: 1em;
 }
-.menuList li button {
+.menuList li a {
+    appearance: button;
     background-image: linear-gradient(to bottom, lightgrey, white);
 
     font-size: 1em;
+    text-decoration: none;
+    color:black;
 
     padding: 1em;
     border-radius: 2em;
 }
-.menuList li button:hover {
+.menuList li a:hover {
     background-color: lightgrey;
     background-image: none;
 }
-.menuList li button:active {
+.menuList li a:active {
     background-color: grey;
     background-image: none;
 }

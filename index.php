@@ -13,14 +13,14 @@
             </div>
             <div class = 'menuList'>
                 <ul>
-                    <li><button>Module 1, Week 1: Foundations</button></li>
-                    <li><button>Module 1, Week 1: Variables</button></li>
-                    <li><button>Module 2, Week 2: Forms</button></li>
-                    <li><button>Module 3, Week 3: Arrays</button></li>
-                    <li><button>Module 4, Week 4: Sessions</button></li>
-                    <li><button>Module 5, Week 5: CMS Sessions</button></li>
-                    <li><button>Module 6, Week 6: Database</button></li>
-                    <li><button>Module 8, Week 8: CMS Database</button></li>
+                    <li><a href="Week1/Foundations/menu.php">Module 1, Week 1: Foundations</a></li>
+                    <li><a>Module 1, Week 1: Variables</a></li>
+                    <li><a>Module 2, Week 2: Forms</a></li>
+                    <li><a>Module 3, Week 3: Arrays</a></li>
+                    <li><a>Module 4, Week 4: Sessions</a></li>
+                    <li><a>Module 5, Week 5: CMS Sessions</a></li>
+                    <li><a>Module 6, Week 6: Database</a></li>
+                    <li><a>Module 8, Week 8: CMS Database</a></li>
                 </ul>
             </div>
         </div>
