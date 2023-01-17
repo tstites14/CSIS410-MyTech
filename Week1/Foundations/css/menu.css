@@ -24,6 +24,7 @@
     margin-bottom: 1em;
 }
 .menuList li a {
+    width: 10em;
     appearance: button;
     background-image: linear-gradient(to bottom, lightgrey, white);
 

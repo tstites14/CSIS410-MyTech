@@ -16,6 +16,8 @@
                     <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li><a href="hosting.php">Hosting Information</a></li>
+                    <br/>
+                    <li><a href="../../index.php">Back</a></li>
                 </ul>
             </div>
         </div>
