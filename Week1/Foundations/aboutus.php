@@ -23,7 +23,7 @@
             </div>
         </div>
         <footer class= 'footer'>
-            <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("menu.php")) ?></p>
+            <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("aboutus.php")) ?></p>
             <p>Copyright © 2023 Theodore Stites</p>
         </footer>
     </body>
