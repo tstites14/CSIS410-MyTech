@@ -1,0 +1,65 @@
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightslategray;
+
+    height: 90%
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/*FormData*/
+.formData {
+    text-align: center;
+    margin-top: 5em;
+}
+.formData p {
+    font-size: x-large;
+    padding-left: 30em;
+    padding-right: 30em;
+}
+
+/*MenuList*/
+.menuList {
+    list-style: none;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+
+    padding: 1em;
+    padding-left: 5em;
+    padding-right: 5em;
+    border-radius: 2em;
+}
+.menuList:hover {
+    background-color: lightgrey;
+    background-image: none;
+}
+.menuList:active {
+    background-color: grey;
+    background-image: none;
+}
+
+/*Footer*/
+.footer {
+    background-color: gray;
+
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    height: 5em;
+}
