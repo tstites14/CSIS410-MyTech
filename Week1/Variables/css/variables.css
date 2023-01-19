@@ -1,0 +1,26 @@
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightslategray;
+
+    height: 90%
+}
+
+/*Header*/
+.header {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    background-color: lightgray;
+}
+
+/*Footer*/
+.footer {
+    background-color: gray;
+
+    position: fixed;
+    bottom: 0;
+    width: 99%;
+    height: 5em;
+}
