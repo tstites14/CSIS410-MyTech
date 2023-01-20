@@ -3,7 +3,7 @@
         <title>Foundations Menu</title>
         <meta charset="utf-8"/>
 
-        <link rel="stylesheet" type="text/css" href="css/variables.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css" />
     </head>
     <body class='content'>
         <div class='content'>
@@ -13,9 +13,9 @@
                 </div>
                 <div class='employeeList'>
                     <ul>
-                        <li><a>Eric Powers - CEO</a></li>
-                        <li><a>Frederick Newman - CIO</a></li>
-                        <li><a>Michelle Patton - CFO</a></li>
+                        <li><a href='ericpowers.php'>Eric Powers - CEO</a></li>
+                        <li><a href='fredericknewman.php'>Frederick Newman - CIO</a></li>
+                        <li><a href='michellepatton.php'>Michelle Patton - CFO</a></li>
                     </ul>
                 </div>
         </div>

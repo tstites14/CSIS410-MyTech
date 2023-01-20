@@ -15,7 +15,33 @@
     background-color: lightgray;
 }
 
-/**/
+/*employeeList*/
+.employeeList li {
+    text-align: center;
+    list-style: none;
+
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.employeeList li a {
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+
+    padding: 1em;
+    border-radius: 2em;
+}
+.employeeList li a:hover {
+    background-color: lightgrey;
+    background-image: none;
+}
+.employeeList li a:active {
+    background-color: grey;
+    background-image: none;
+}
 
 /*Footer*/
 .footer {
