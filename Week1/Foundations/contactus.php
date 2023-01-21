@@ -9,8 +9,8 @@
     <body class='content'>
         <div class='content'>
             <div class='header'>
-                <h1>Week 1: Foundations</h1>
-                <h2>Liberty University Online CSIS 410: Web Enterprise Technologies</h2>
+                <h1>MyTech Co. Ltd.</h1>
+                <h2>Contact Us</h2>
             </div>
             <div class = 'formData'>
                 <p>
