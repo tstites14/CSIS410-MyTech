@@ -8,14 +8,22 @@
     <body class='content'>
         <div class='content'>
                 <div class='header'>
-                    <h1>Week 1: Variables</h1>
-                    <h2>Liberty University Online CSIS 410: Web Enterprise Technologies</h2>
+                    <h1>MyTech Co. Ltd.</h1>
+                    <h2>Our Team</h2>
                 </div>
                 <div class='employeeList'>
                     <ul>
-                        <li><a href='ericpowers.php'>Eric Powers - CEO</a></li>
-                        <li><a href='fredericknewman.php'>Frederick Newman - CIO</a></li>
-                        <li><a href='michellepatton.php'>Michelle Patton - CFO</a></li>
+                        <h3>Executives</h3>
+                        <li><a href='ericpowers.php'>Eric Powers</a></li>
+                        <li><a href='fredericknewman.php'>Frederick Newman</a></li>
+                        <li><a href='michellepatton.php'>Michelle Patton</a></li>
+                        <h3>Development Team</h3>
+                        <li><a href='hannahdelaney.php'>Hannah Delaney</a></li>
+                        <li><a href='jameswilliams.php'>James Williams</a></li>
+                        <li><a href='natalieharvey.php'>Natalie Harvey</a></li>
+                        <li><a href='johnemerson.php'>John Emerson</a></li>
+                        <br/><br/>
+                        <li><a href='../../index.php'>Back</a></li>
                     </ul>
                 </div>
         </div>

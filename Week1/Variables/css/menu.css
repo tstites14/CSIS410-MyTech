@@ -16,6 +16,9 @@
 }
 
 /*employeeList*/
+.employeeList {
+    text-align: center;
+}
 .employeeList li {
     text-align: center;
     list-style: none;
@@ -24,6 +27,7 @@
     margin-bottom: 1em;
 }
 .employeeList li a {
+    width: 15em;
     appearance: button;
     background-image: linear-gradient(to bottom, lightgrey, white);
 
