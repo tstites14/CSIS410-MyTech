@@ -50,5 +50,7 @@
     position: fixed;
     bottom: 0;
     width: 99%;
-    height: 5em;
+    height: 8em;
+
+    padding-left: 1em;
 }

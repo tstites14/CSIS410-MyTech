@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang='en-US'>
     <head>
         <title>Main Menu</title>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
 
-        <link rel="stylesheet" type="text/css" href="index.css" />
+        <link rel="stylesheet" type="text/css" href="index.css">
     </head>
     <body class='content'>
         <div class='content'>
@@ -27,6 +28,7 @@
         <footer class= 'footer'>
             <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("index.php")) ?></p>
             <p>Copyright © 2023 Theodore Stites</p>
+            <input type="image" src="xhtml11.png" name="validation" alt="https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2F" onclick="window.location='https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2F'">
         </footer>
     </body>
 </html>

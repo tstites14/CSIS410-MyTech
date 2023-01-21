@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang='en-US'>
     <head>
         <title>Contact Us</title>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
 
-        <link rel="stylesheet" type="text/css" href="css/contactus.css" />
+        <link rel="stylesheet" type="text/css" href="css/contactus.css">
     </head>
     <body class='content'>
         <div class='content'>
@@ -15,9 +16,9 @@
                 <p>
                     <?php 
                         echo "Contact us via:";
-                        echo "<br/>";
+                        echo "<br>";
                         echo "Email: support@mytech.com\n";
-                        echo "<br/>";
+                        echo "<br>";
                         echo "Phone: 123-456-7890";
                     ?>
                 </p>
@@ -27,6 +28,7 @@
         <footer class= 'footer'>
             <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("contactus.php")) ?></p>
             <p>Copyright © 2023 Theodore Stites</p>
+            <input type="image" src="../../xhtml11.png" name="validation" alt="https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek1%2FFoundations%2Fcontactus.php" onclick="window.location='https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek1%2FFoundations%2Fcontactus.php'">
         </footer>
     </body>
 </html>

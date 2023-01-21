@@ -1,9 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang='en-US'>
     <head>
         <title>Foundations Menu</title>
-        <meta charset="utf-8"/>
+        <meta charset="utf-8">
 
-        <link rel="stylesheet" type="text/css" href="css/menu.css" />
+        <link rel="stylesheet" type="text/css" href="css/menu.css">
     </head>
     <body class='content'>
         <div class='content'>
@@ -16,14 +17,15 @@
                     <li><a href="aboutus.php">About Us</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li><a href="hosting.php">Hosting Information</a></li>
-                    <br/>
-                    <li><a href="../../index.php">Back</a></li>
                 </ul>
+                <br><br>
+                <a href="../../index.php">Back</a>
             </div>
         </div>
         <footer class= 'footer'>
             <p><?php echo "This file was last modified on " . date("F d Y, H:i:s.", filemtime("menu.php")) ?></p>
             <p>Copyright © 2023 Theodore Stites</p>
+            <input type="image" src="../../xhtml11.png" name="validation" alt="https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek1%2FFoundations%2Fmenu.php" onclick="window.location='https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek1%2FFoundations%2Fmenu.php'">
         </footer>
     </body>
 </html>
