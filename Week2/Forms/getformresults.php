@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title></title>
+        <title>Get Form Results</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/getformresults.css">
@@ -47,7 +47,7 @@
                             <p><?php echo $aSource;?></p>
                         <h4>For the question "Which option most closely matches how often do you expect to use our support for your app?", you answered:</h4>
                             <p><?php echo $aFrequency;?></p>
-                    <br>
+                    <hr>
                     <h3>iOS App Results</h3>
                         <h4>For the question "On a scale of 1-5, how fair is the pricing for this product?", you answered:</h4>
                             <p><?php echo $iPricing;?></p>
@@ -59,7 +59,7 @@
                             <p><?php echo $iSource;?></p>
                         <h4>For the question "Which option most closely matches how often do you expect to use our support for your app?", you answered:</h4>
                             <p><?php echo $iFrequency;?></p>
-                    <br>
+                    <hr>
                     <h3>Combo Package Results</h3>
                         <h4>For the question "On a scale of 1-5, how fair is the pricing for this product?", you answered:</h4>
                                 <p><?php echo $cPricing;?></p>
@@ -72,14 +72,14 @@
                             <h4>For the question "On a scale of 1-5, how interested would you be in an additional discount for multiple purchases?", you answered:</h4>
                                 <p><?php echo $cDiscount;?></p>
                     
-                    <br>
+                    <hr>
                     <a href='menu.php'>Back to menu</a>
             </div>
         </div>
 
         <?php 
             include '../../footer.php';
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek2%2FForms%2Fgetformresults.php', __FILE__);
         ?>
     </body>
 </html>

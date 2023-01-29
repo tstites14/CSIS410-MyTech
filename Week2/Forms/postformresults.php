@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title></title>
+        <title>Post Form Results</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/postformresults.css">
@@ -80,7 +80,7 @@
 
         <?php 
             include '../../footer.php';
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek2%2FForms%2Fpostformresults.php', __FILE__);
         ?>
     </body>
 </html>
