@@ -20,7 +20,7 @@
 
                     <div class='formColumns'>
                         <div class='formDiv'>
-                            <img src=''>
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg' alt="Android development">
                             <h3>Android App</h3>
                             <h3>$5,000 - $8,000 (Depending on complexity)</h3>
                             <h4>Features:</h4>
@@ -69,7 +69,7 @@
                             <p>* Feature updates are available at an additional cost</p>
                         </div>
                         <div class='formDiv'>
-                            <img src=''>
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>iOS App</h3>
                             <h3>$5,000 - $8,000 (Depending on complexity)</h3>
                             <h4>Features:</h4>
@@ -115,7 +115,8 @@
                             <p>* Feature updates are available at an additional cost</p>
                         </div>
                         <div class='formDiv'>
-                            <img src=''>
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg' alt="Android development">
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Combo Package</h3>
                             <h3>$8,000 - $15,000 (Depending on complexity)</h3>
                             <h4>Features:</h4>
@@ -175,7 +176,7 @@
 
         <?php
                 include '../../footer.php';
-                footer('', __FILE__);
+                footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek2%2FForms%2Fgetform.php', __FILE__);
             ?>
     </body>
 </html>

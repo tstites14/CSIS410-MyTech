@@ -92,6 +92,7 @@ html, body {
 
 /*FormColumns*/
 .formColumns {
+    margin-top: 3em;
     margin-bottom: 3em;
 }
 .formColumns:after {
@@ -107,7 +108,10 @@ html, body {
     width: 33.33%;
 }
 .formDiv img {
-    width: 5em;
+    width: 8em;
+
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /*Radio*/

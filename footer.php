@@ -5,6 +5,7 @@
         function footer(string $url, string $fileName) {
             echo "<p>This file was last modified on " . date("F d Y, H:i:s.", filemtime($fileName)) . " EST</p>";
             echo '<p>Copyright © 2023 Theodore Stites</p>';
+            echo '<p>All images of Android and iOS logos are provided by Wikimedia Commons</p>';
             echo '<input id=\'cert\' type=\'image\' src=\'../../xhtml11.png\' name=\'validation\' alt=\'' . $url . '\' onclick=\'window.location="' . $url  . '"\'>';
             echo '</footer>';
         }
