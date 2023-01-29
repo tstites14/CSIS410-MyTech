@@ -4,7 +4,8 @@
         <title>Get Form</title>
         <meta charset="utf-8">
 
-        <link rel="stylesheet" type="text/css" href="css/getform.css">
+        <link rel="stylesheet" type="text/css" href="css/postform.css">
+        <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <div class='content'>

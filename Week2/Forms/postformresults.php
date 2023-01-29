@@ -4,7 +4,8 @@
         <title></title>
         <meta charset="utf-8">
 
-        <link rel="stylesheet" type="text/css" href="css/getformresults.css">
+        <link rel="stylesheet" type="text/css" href="css/postformresults.css">
+        <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <div class='content'>

@@ -5,6 +5,7 @@
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <div class='content'>
@@ -28,7 +29,7 @@
         <!--Footer-->
         <?php 
             include "../../footer.php";
-            footer("", __FILE__);
+            footer("https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek2%2FForms%2Fmenu.php", __FILE__);
         ?>
     </body>
 </html>
