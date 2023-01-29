@@ -33,9 +33,11 @@
                     $cUpdates = $_GET["cUpdates"];
                     $cPurchase = $_GET["cPurchase"];
                     $cDiscount = $_GET["cDiscount"];
+
+                    $comments = $_GET["comments"];
                 ?>
 
-                <h1>Feedback Results</h1>
+                <h1>Feedback Results for <?php echo $_GET["name"]; ?></h1>
                     <h3>Android App Results</h3>
                         <h4>For the question "On a scale of 1-5, how fair is the pricing for this product?", you answered:</h4>
                             <p><?php echo $aPricing;?></p>
@@ -71,9 +73,15 @@
                                 <p><?php echo $cPurchase;?></p>
                             <h4>For the question "On a scale of 1-5, how interested would you be in an additional discount for multiple purchases?", you answered:</h4>
                                 <p><?php echo $cDiscount;?></p>
-                    
                     <hr>
-                    <a href='menu.php'>Back to menu</a>
+                <?php 
+                    if (!empty($comments)) {
+                        echo '<h3>Here are the comments you left:</h3>';
+                        echo '<p>' . $comments . '</p>';
+                        echo '<hr>';
+                    }
+                ?>
+                <a href='menu.php'>Back to menu</a>
             </div>
         </div>
 
