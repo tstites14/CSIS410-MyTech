@@ -38,6 +38,7 @@
                 ?>
 
                 <h1>Feedback Results for <?php echo $_GET["name"]; ?></h1>
+                <hr>
                     <h3>Android App Results</h3>
                         <h4>For the question "On a scale of 1-5, how fair is the pricing for this product?", you answered:</h4>
                             <p><?php echo $aPricing;?></p>
