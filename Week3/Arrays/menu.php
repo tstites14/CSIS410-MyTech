@@ -45,9 +45,21 @@
                 <form action="employee.php" method="post">
                     <br>
                     <br>
+                    ID: <input class='textbox' type="text" name="id" value="<?php 
+                        if (isset($_POST["empID"])) {
+                            echo $employee->get_id();
+                        }
+                    ?>" readonly>
+                    <br>
                     Name: <input class='textbox' type="text" name="name" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_name();
+                        }
+                    ?>">
+                    <br>
+                    Job Title: <input class='textbox' type="text" name="title" value="<?php 
+                        if (isset($_POST["empID"])) {
+                            echo $employee->get_job();
                         }
                     ?>">
                     <br>
