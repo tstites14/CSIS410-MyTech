@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Arrays Menu</title>
 
+        <link rel="stylesheet" type="text/css" href="css/employee.css">
         <link rel="stylesheet" type="text/css" href="../../footer.css">
 
         <?php include "variables.php"?>
