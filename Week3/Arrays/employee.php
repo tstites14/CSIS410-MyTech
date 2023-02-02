@@ -37,15 +37,19 @@
                 }
             ?>
 
-            <div class='body'>
-                <img src='<?php echo $employee->get_photo(); ?>' alt="Eric Powers">
+            <div class='employeeInfo'>
+                <img src='<?php echo $employee->get_photo(); ?>' alt="<?php echo $employee->get_name(); ?>">
+                <h2>
+                    <?php echo $employee->get_name() . "\n"; ?>
+                </h2>
+                <h3>
+                    <?php echo $employee->get_job() . "\n"; ?>
+                </h3>
                 <h5>
-                    <?php echo $employee->get_name(); ?>
-                    <?php echo $employee->get_job(); ?>
-                    <?php echo $employee->get_department(); ?>
-                    <?php echo $employee->get_degree(); ?>
-                    <?php echo $employee->get_email(); ?>
-                    <?php echo $employee->get_interests(); ?>
+                    <?php echo $employee->get_department() . "\n"; ?>
+                    <?php echo $employee->get_degree() . "\n"; ?>
+                    <?php echo $employee->get_email() . "\n"; ?>
+                    <?php echo $employee->get_interests() . "\n"; ?>
                 </h5>
             </div>
         </div>
