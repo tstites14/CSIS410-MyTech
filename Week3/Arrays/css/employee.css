@@ -1,7 +1,7 @@
 html, body {
     background-color: lightslategray;
 
-    height: calc(100% - 5.3em);
+    height: calc(100% - 11.2em);
     margin: 0;
     padding: 0;
 }
@@ -37,4 +37,35 @@ html, body {
 .employeeInfo img {
     width: 20em;
     border-radius: 50%;
+}
+.employeeInfo h2 {
+    margin-bottom: 0;
+}
+.employeeInfo h3 {
+    margin-top: 0.5em;
+}
+.employeeInfo h5 {
+    font-size: larger;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+.employeeInfo a {
+    width: 15em;
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+
+    padding: 1em;
+    border-radius: 2em;
+}
+.employeeInfo a:hover {
+    background-color: lightgrey;
+    background-image: none;
+}
+.employeeInfo a:active {
+    background-color: grey;
+    background-image: none;
 }

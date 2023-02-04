@@ -17,7 +17,7 @@
             </div>
             <div class='formData'>
                 <form action="menu.php" method="post">
-                    <select class='employees' name='empID'>
+                    <select class='employees' name='empID' required>
                         <?php
                             echo '<option value=\'\'</option>';
                             foreach ($employeeArray as $employee) {
@@ -55,37 +55,37 @@
                         if (isset($_POST["empID"])) {
                             echo $employee->get_name();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     Job Title: <input class='textbox' type="text" name="title" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_job();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     Degree: <input class='textbox' type="text" name="degree" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_degree();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     Department: <input class='textbox' type="text" name="department" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_department();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     Interests: <input class='textbox' type="text" name="interests" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_interests();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     Email: <input class='textbox' type="text" name="email" value="<?php 
                         if (isset($_POST["empID"])) {
                             echo $employee->get_email();
                         }
-                    ?>">
+                    ?>" required>
                     <br>
                     <br>
                     <input class='button' type="submit">

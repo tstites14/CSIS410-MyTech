@@ -40,17 +40,19 @@
             <div class='employeeInfo'>
                 <img src='<?php echo $employee->get_photo(); ?>' alt="<?php echo $employee->get_name(); ?>">
                 <h2>
-                    <?php echo $employee->get_name() . "\n"; ?>
+                    <?php echo $employee->get_name(); ?>
                 </h2>
                 <h3>
-                    <?php echo $employee->get_job() . "\n"; ?>
+                    <?php echo $employee->get_job(); ?>
                 </h3>
-                <h5>
-                    <?php echo $employee->get_department() . "\n"; ?>
-                    <?php echo $employee->get_degree() . "\n"; ?>
-                    <?php echo $employee->get_email() . "\n"; ?>
-                    <?php echo $employee->get_interests() . "\n"; ?>
-                </h5>
+                <h5><?php echo nl2br($employee->get_department() . " department\n"); ?></h5>
+                <h5><?php echo nl2br($employee->get_degree() . "\n"); ?></h5>
+                <h5><?php echo nl2br("Interests: " . $employee->get_interests() . "\n"); ?></h5>
+                <h5><?php echo nl2br($employee->get_email() . "\n"); ?></h5>
+
+                <br>
+                <a href="menu.php">Search another employee</a>
+                <a href="../../index.php">Back to main menu</a>
             </div>
         </div>
 
