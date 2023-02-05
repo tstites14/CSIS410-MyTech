@@ -90,6 +90,7 @@
                     <br>
                     <input class='button' type="submit">
                 </form>
+                <a href="../../index.php">Back</a>
             </div>
         </div>
 

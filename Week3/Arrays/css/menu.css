@@ -30,6 +30,28 @@ html, body {
     text-align: center;
     flex: 1;
 }
+.formData a {
+    width: 15em;
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+
+    font-size: 1em;
+    text-decoration: none;
+    color:black;
+
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 2em;
+}
+.formData a:hover {
+    background-color: lightgrey;
+    background-image: none;
+}
+.formData a:active {
+    background-color: grey;
+    background-image: none;
+}
 
 /*Employees*/
 .employees {
