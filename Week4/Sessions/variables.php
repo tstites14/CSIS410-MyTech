@@ -77,6 +77,15 @@
         }
     }
 
+    function updateEmployee(Employee $employee) {
+        $employee->set_name($_POST["name"]);
+        $employee->set_job($_POST["title"]);
+        $employee->set_department($_POST["department"]);
+        $employee->set_degree($_POST["degree"]);
+        $employee->set_email($_POST["email"]);
+        $employee->set_interests($_POST["interests"]);
+    }
+
     $ericPowers = new Employee(1, "Dr. Eric Powers", 'CEO', 'Executive', 'Ph.D. Business Administration and Management', 'epowers@mytech.com', 'Golfing', '../../Week1/Variables/img/EricPowers.jpg');
     $frederickNewman = new Employee(2, 'Frederick Newman', 'CIO', 'Executive', 'M.S. Information Technology', 'fnewman@mytech.com', 'Boating', '../../Week1/Variables/img/FrederickNewman.jpg');
     $michellePatton = new Employee(3, 'Michelle Patton', 'CFO', 'Executive', 'M.S. Accounting', 'mpatton@mytech.com', 'Movies', '../../Week1/Variables/img/MichellePatton.jpg');

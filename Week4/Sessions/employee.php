@@ -12,15 +12,6 @@
     <body>
         <!--Prevents any HTML from showing unless "auth" is set-->
         <?php 
-            function updateEmployee(Employee $employee) {
-                $employee->set_name($_POST["name"]);
-                $employee->set_job($_POST["title"]);
-                $employee->set_department($_POST["department"]);
-                $employee->set_degree($_POST["degree"]);
-                $employee->set_email($_POST["email"]);
-                $employee->set_interests($_POST["interests"]);
-            }
-
             session_start();
             if (isset($_SESSION["auth"])) { 
         ?>
