@@ -61,7 +61,7 @@
         <!--If "auth" is not set, show alert box and redirect back to login page-->
         <?php
             } else {
-                echo "<script type='text/javascript'>";
+                echo "<script>";
                 echo "alert('You are not authorized to view this content.');";
                 echo 'window.location.href="login.php";';
                 echo "</script>";

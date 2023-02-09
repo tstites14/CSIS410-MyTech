@@ -34,7 +34,7 @@
 
             <?php 
                 include "../../footer.php";
-                footer('', __FILE__);
+                footer('https://validator.w3.org/nu/?doc=https%3A%2F%2Ftstites.com%2FWeek4%2FSessions%2Flogin.php', __FILE__);
             ?> 
         </div>
     </body>

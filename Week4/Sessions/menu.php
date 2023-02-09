@@ -102,13 +102,13 @@
 
         <?php
             include "../../footer.php";
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=https%3A%2F%2Ftstites.com%2FWeek4%2FSessions%2Fmenu.php', __FILE__);
         ?>
 
         <!--If "auth" is not set, show alert box and redirect back to login page-->
         <?php
             } else {
-                echo "<script type='text/javascript'>";
+                echo "<script>";
                 echo "alert('You are not authorized to view this content.');";
                 echo 'window.location.href="login.php";';
                 echo "</script>";
