@@ -8,6 +8,26 @@
     padding-left: 1em;
     padding-top: 0.5em;
 }
+.footerContent {
+    width: 50%;
+}
 #cert {
     width: 7em;
+}
+#logout {
+    float: right;
+
+    appearance: button;
+    background-image: linear-gradient(to bottom, lightgrey, white);
+    width: 10em;
+
+    font-size: 1em;
+    text-decoration: none;
+    text-align: center;
+    color:black;
+
+    padding: 1em;
+    margin-left: 1em;
+    margin-right: 1em;
+    border-radius: 2em;
 }
