@@ -24,7 +24,7 @@
                 <form action="redirect.php" method="post">
                     Username: <input class="textbox" type="text" name="username" value="">
                     <br>
-                    Password: <input class="textbox" type="text" name="password" value="">
+                    Password: <input class="textbox" type="password" name="password" value="">
                     <br>
                     <input class="button" type="submit" name="submit" value="Submit">
                 </form>
