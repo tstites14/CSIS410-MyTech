@@ -15,7 +15,7 @@
 
         function logout() {
             if (isset($_SESSION["auth"]) && $_SESSION["auth"]) {
-                echo '<a id="logout" href="logout.php">Log out</a>';
+                echo '<a id="logout" href="logout.php" onclick="return confirm(\'Are you sure you wish to log out?\');">Log out</a>';
             }
         }
     ?>
