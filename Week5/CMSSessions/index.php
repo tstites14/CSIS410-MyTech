@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>MyTech Co. Ltd. Home</title>
         <meta charset="utf-8">
