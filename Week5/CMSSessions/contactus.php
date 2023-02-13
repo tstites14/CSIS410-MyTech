@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <?php include "header.php"; ?>
