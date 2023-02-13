@@ -1,0 +1,50 @@
+html, body {
+    background-color: rgb(210, 210, 210);
+
+    height: calc(100% - 0em);
+    margin: 0;
+    padding: 0;
+}
+
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(210, 210, 210);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    text-align: center;
+}
+.content h2 {
+    margin-top: 3em;
+    font-size: 3em;
+}
+
+.tableColumn {
+    text-align: center;
+}
+.tableColumn img {
+    width: 25%;
+    margin-bottom: 3em;
+    margin: 1em;
+}
+.tableColumn form button {
+    width: 10em;
+    font-size: 2em;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.5em;
+
+    background-image: linear-gradient(to bottom, lightgrey, white);
+}
+.tableColumn form button:hover {
+    background-color: darkgray;
+    background-image: none;
+}
+.tableColumn form button:active {
+    background-color: grey;
+    background-image: none;
+}
