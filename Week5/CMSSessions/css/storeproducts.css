@@ -21,6 +21,9 @@ html, body {
     margin-top: 3em;
     font-size: 3em;
 }
+.content table {
+    flex: 1;
+}
 
 .tableColumn {
     text-align: center;
