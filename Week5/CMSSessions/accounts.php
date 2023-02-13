@@ -10,13 +10,13 @@
             
             switch (strtolower($username)) {
                 case "customer":
-                    $accessLevel = 1;
+                    $this->accessLevel = 1;
                     break;
                 case "publisher":
-                    $accessLevel = 2;
+                    $this->accessLevel = 2;
                     break;
                 case "admin":
-                    $accessLevel = 3;
+                    $this->accessLevel = 3;
                     break;
             }
         }
