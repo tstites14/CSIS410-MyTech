@@ -13,7 +13,7 @@
         <!--Prevents any HTML from showing unless "auth" is set-->
         <?php 
             session_start();
-            if (isset($_SESSION["auth"])) { 
+            if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
         ?>
 
         <?php
