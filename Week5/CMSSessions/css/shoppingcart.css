@@ -21,61 +21,50 @@ html, body {
     margin-top: 3em;
     font-size: 3em;
 }
-.content table {
+.content ul {
     flex: 1;
 }
-
-/*Checkout*/
-.checkout {
-    width: 10em;
-    display: flex;
-
-    margin-left: 90%;
-    margin-right: 10%;
+.content > ul li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
 }
-.checkout img {
-    width:5em;
-    margin-top: 2em;
-    margin-bottom: 5em;
-    text-align: center;
-}
-.checkout p {
-    width: 1.75em;
-    height: 1.5em;
-    font-size: 2.5em;
-    text-align: center;
-
-    padding-top: 0.33em;
-
-    color: white;
-    background-color: black;
-    border-radius: 50%;
-}
-
-/*TableColumn*/
-.tableColumn {
-    text-align: center;
-}
-.tableColumn img {
-    width: 25%;
-    margin-bottom: 3em;
-    margin: 1em;
-}
-.tableColumn form button {
+.content button {
     width: 10em;
     font-size: 2em;
 
     padding-top: 0.25em;
     padding-bottom: 0.25em;
+    margin-bottom: 1em;
     border-radius: 0.5em;
 
     background-image: linear-gradient(to bottom, lightgrey, white);
 }
-.tableColumn form button:hover {
+.content button:hover {
     background-color: darkgray;
     background-image: none;
 }
-.tableColumn form button:active {
+.content button:active {
     background-color: grey;
     background-image: none;
+}
+
+/*CartEntry*/
+.cartEntry {
+    margin: 1em 25%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+.cartEntry img {
+    width: 5em;
+    padding-right: 1em;
+    float:left;
+}
+.cartEntry p {
+    font-size: 1.5em;
+}
+#name {
+    float: left;
+    margin-left: 30%;
 }

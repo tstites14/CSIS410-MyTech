@@ -19,6 +19,18 @@
                 if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
             ?>
             <h2>Our Products</h1>
+            <div class='checkout'>
+                <p>
+                    <?php 
+                        if (isset($_SESSION["itemCount"])) {
+                            echo $_SESSION["itemCount"];
+                        } else {
+                            echo "0";
+                        }
+                    ?>
+                </p>
+                <a href="shoppingcart.php"><img src="img/cart_icon.svg"></a>
+            </div>
 
             <table>
                 <colgroup>
@@ -32,8 +44,8 @@
                         <div class='tableColumn'>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <h3>Android App</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="a1" value="a1">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="a1-500">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -41,8 +53,8 @@
                         <div class='tableColumn'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>iOS App</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="i1" value="i1">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="i1">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -51,8 +63,8 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg' alt="Android development">
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Android and iOS App</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="c1" value="c1">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="c1">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -63,8 +75,8 @@
                         <div class='tableColumn'>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <h3>Priority Support for Android Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="a2" value="a2">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="a2">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -72,8 +84,8 @@
                         <div class='tableColumn'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Priority Support for iOS Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="i2" value="i2">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="i2">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -82,8 +94,8 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Priority Support for Android and iOS Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="c2" value="c2">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="c2">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -94,8 +106,8 @@
                         <div class='tableColumn'>
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <h3>Additional Updates for Android Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="a3" value="a3">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="a3">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -103,8 +115,8 @@
                         <div class='tableColumn'>
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Additional Updates for iOS Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="i3" value="i3">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="i3">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -113,8 +125,8 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Additional Updates for Android and iOS Apps</h3>
-                            <form action="" method="post">
-                                <button type="submit" name="c3" value="c3">Add to cart</button>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="c3">Add to cart</button>
                             </form>
                         </div>
                     </td>
