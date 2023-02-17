@@ -16,11 +16,11 @@
             <h1>Testimonials</h1>
             <br>
             <h2>Eric Martin - Business Owner</h2>
-            <p></p>
+            <p>My small business contacted MyTech Co. to work on an app for my business and their work was excellent. They worked with us to create a high-quality application and we would love to work with them again!</p>
             <h2>Maryanne Jameson - Entrepreneur</h2>
-            <p></p>
+            <p>As an entrepreneur, my business is not particularly large. Getting it into the public consciousness is very difficult. MyTech Co. provided me with the tools I needed to grow my business and enabled me to take the next step in growth.</p>
             <h2>Joseph Frayzer - Student</h2>
-            <p></p>
+            <p>Being a student is tough. Fortunately, MyTech Co. was there to help me make it easier. By making a customized time management app, they helped me improve my college experience and my grades have never been better.</p>
         </div>
 
         <?php

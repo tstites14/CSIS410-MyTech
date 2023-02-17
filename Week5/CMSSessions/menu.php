@@ -9,8 +9,7 @@
             <span>&#9660;</span>
         </li>
         <li><a href="login.php">Products</a></li>
-        <li><a href="contactus.php">Contact Us</a></li>
-        <li><a href="faq.php">FAQ</a></li>
+        <li><a href="helpcenter.php">Help Center</a></li>
         <li><a href="testimonials.php">Testimonials</a></li>
     </ul>
 </nav>
