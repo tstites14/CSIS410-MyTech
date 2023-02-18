@@ -6,12 +6,13 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/mission.css">        
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <?php include "header.php"; ?>
 
-        <div class='text'>
+        <div class='content'>
             <h1>Our Mission</h1>
             <p>Software development is a tough business. We know this as well as anyone. There are hundreds of other companies that you could turn to in order to create your dream app. So what separates us from that competition? The answer lies in our customer care.</p>
             <p>Once you purchase an app with MyTech. Co., we will contact you and get to understanding exactly what you would like us to make, and if necessary, provide feedback on how to make your app more effective and manageable.</p>
