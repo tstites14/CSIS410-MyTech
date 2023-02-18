@@ -6,12 +6,13 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/faq.css">
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <?php include "header.php"; ?>
 
-        <div class='text'>
+        <div class='content'>
             <h1>Frequently Asked Questions</h1>
             <h2>How long will it take to receive my app?</h2>
             <p>Depending on the complexity of your app, turnaround time can range from one month to three months.</p>
