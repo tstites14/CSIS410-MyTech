@@ -6,12 +6,13 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/helpcenter.css">
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <?php include "header.php"; ?>
 
-        <div class='text'>
+        <div class='content'>
             <h1>Help Center</h1>
 
             <table>
@@ -23,12 +24,16 @@
                 <tr>
                     <td>
                         <div class='tableColumn'>
-                            <a href="contactus.php"><img src="img/contact-us.jpg" alt="contact us"></a>
+                            <h2>Frequently Asked Questions</h2>
+                            <a href="faq.php"><img src="img/faq.jpg" alt="faq"></a>
+                            <p>We receive certain questions many times, and so we have compiled all the answers to these and more in our <a href="faq.php">FAQ</a>.</p>
                         </div>
                     </td>
                     <td>
                         <div class='tableColumn'>
-                            <a href="faq.php"><img src="img/faq.jpg" alt="faq"></a>
+                            <h2>Contact Us</h2>
+                            <a href="contactus.php"><img src="img/contact-us.jpg" alt="contact us"></a>
+                            <p>If you have any questions that haven't been answered by our <a href="faq.php">FAQ</a>, feel free to <a href="contactus.php">contact us</a> and we would be glad to assist you further.</p>
                         </div>
                     </td>
                 </tr>
