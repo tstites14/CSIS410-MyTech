@@ -6,13 +6,13 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
-
+        <link rel="stylesheet" type="text/css" href="css/testimonials.css">
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
         <?php include "header.php"; ?>
 
-        <div class='text'>
+        <div class='content'>
             <h1>Testimonials</h1>
             <br>
             <h2>Eric Martin - Business Owner</h2>
