@@ -24,8 +24,8 @@ html, body {
 
     text-align: center;
 }
-.text p {
+.content p {
+    font-size: 1.25em;
     margin-left: 30%;
     margin-right: 30%;
-    font-size: 1.25em;
 }

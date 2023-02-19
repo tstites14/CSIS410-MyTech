@@ -23,9 +23,6 @@ html, body {
 }
 .content p {
     font-size: 1.25em;
-}
-.text p {
     margin-left: 30%;
     margin-right: 30%;
-    font-size: 1.25em;
 }
