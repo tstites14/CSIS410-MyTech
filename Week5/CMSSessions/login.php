@@ -20,6 +20,7 @@
         <div class='content'>
             <?php include "header.php"; ?>
 
+            <h1>Log in</h1>
             <form action="redirect.php" method="post">
                 Username*: <input class="textbox" type="text" name="username" value="" required>
                 <br>
