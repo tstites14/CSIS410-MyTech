@@ -43,7 +43,7 @@
                                 <br>
                                 City*: <input type="text" name="" value="" required>
                                 <br>
-                                State*: <input type="text" name="" value="" required>
+                                State*: <input type="text" minlength="2" maxlength="2" placeholder="XX" name="" value="" required>
                                 <br>
                                 ZIP Code*: <input type="numeric" minlength="5" maxlength="5" name="" value="" required>
                                 <br><br>
