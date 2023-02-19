@@ -16,13 +16,13 @@ html, body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-}
-
-.content {
     flex: 1;
     margin-top: 5em;
 
     text-align: center;
+}
+.content p {
+    font-size: 1.25em;
 }
 .text p {
     margin-left: 30%;

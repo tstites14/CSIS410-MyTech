@@ -34,3 +34,6 @@ html, body {
 .tableColumn img {
     width: 25em;
 }
+.tableColumn p {
+    font-size: 1.25em;
+}
