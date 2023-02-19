@@ -26,7 +26,10 @@
     }
 
     function redirectLogin() {
-        header('Location: login.php');
+        echo "<script>
+                alert('Incorrect username or password. Please try again!');
+                window.location.href='login.php';
+              </script>";
         exit;
     }
 ?>

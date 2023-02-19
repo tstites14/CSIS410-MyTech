@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
+        <link rel="stylesheet" type="text/css" href="css/login.css">        
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
@@ -20,9 +21,9 @@
             <?php include "header.php"; ?>
 
             <form action="redirect.php" method="post">
-                Username: <input class="textbox" type="text" name="username" value="">
+                Username*: <input class="textbox" type="text" name="username" value="" required>
                 <br>
-                Password: <input class="textbox" type="password" name="password" value="">
+                Password*: <input class="textbox" type="password" name="password" value="" required>
                 <br>
                 <input class="button" type="submit" name="submit" value="Submit">
             </form>
