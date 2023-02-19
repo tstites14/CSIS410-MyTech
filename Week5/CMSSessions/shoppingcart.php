@@ -21,6 +21,8 @@
                 if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
             ?>
 
+            <h1>Shopping Cart</h1>
+
             <?php
                 if (isset($_POST["newProduct"])) {
                     //Increment itemCount
