@@ -55,6 +55,7 @@ html, body {
 /*TableColumn*/
 .tableColumn {
     text-align: center;
+    margin-bottom: 5em;
 }
 .tableColumn img {
     width: 25%;

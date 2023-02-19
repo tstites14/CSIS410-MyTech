@@ -54,7 +54,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>iOS App</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i1">Add to cart</button>
+                                <button type="submit" name="newProduct" value="i1-500">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -64,7 +64,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Android and iOS App</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c1">Add to cart</button>
+                                <button type="submit" name="newProduct" value="c1-800">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -76,7 +76,7 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <h3>Priority Support for Android Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="a2">Add to cart</button>
+                                <button type="submit" name="newProduct" value="a2-350">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -85,7 +85,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Priority Support for iOS Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i2">Add to cart</button>
+                                <button type="submit" name="newProduct" value="i2-350">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -95,7 +95,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Priority Support for Android and iOS Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c2">Add to cart</button>
+                                <button type="submit" name="newProduct" value="c2-350">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -136,8 +136,11 @@
                     <td></td>
                     <td>
                         <div class='tableColumn'>
-                            <img src="" alt="WIP">
-                            <h3></h3>
+                            <img src="img/tshirt.png" alt="T-shirt">
+                            <h3>MyTech Co. T-shirt</h3>
+                            <form action="shoppingcart.php" method="post">
+                                <button type="submit" name="newProduct" value="s4-30">Add to cart</button>
+                            </form>
                         </div>
                     </td>
                     <td></td>

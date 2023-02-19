@@ -73,6 +73,9 @@
                     $this->imgUrl[0] = "https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg";
                     $this->imgUrl[1] = "https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg";
                     break;
+                case "s":
+                    $os = "";
+                    $this->imgUrl[0] = "img/tshirt.png";
             }
 
             switch ($type) {
@@ -85,6 +88,8 @@
                 case "3":
                     $this->name = "Additional Updates for " . $os . " Apps";
                     break;
+                case "4":
+                    $this->name = "MyTech Co. " . $os;
             }
         }
 
