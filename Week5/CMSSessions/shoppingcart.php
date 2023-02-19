@@ -58,6 +58,7 @@
                     echo "<h3>$" . $totalPrice . "</h3>";
                 ?>
             </p>
+            <a href="storeproducts.php"><button name="Back" value="Back">Back</button></a>
             <form action="checkout.php" method="post">
                 <button type="submit" name="totalPrice" value="<?php echo $totalPrice; ?>">Check Out</button>
             </form>
