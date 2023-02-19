@@ -106,7 +106,7 @@
                             <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
                             <h3>Additional Updates for Android Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="a3">Add to cart</button>
+                                <button type="submit" name="newProduct" value="a3-400">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -115,7 +115,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Additional Updates for iOS Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i3">Add to cart</button>
+                                <button type="submit" name="newProduct" value="i3-400">Add to cart</button>
                             </form>
                         </div>
                     </td>
@@ -125,7 +125,7 @@
                             <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
                             <h3>Additional Updates for Android and iOS Apps</h3>
                             <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c3">Add to cart</button>
+                                <button type="submit" name="newProduct" value="c3-750">Add to cart</button>
                             </form>
                         </div>
                     </td>
