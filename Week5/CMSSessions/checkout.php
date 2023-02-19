@@ -38,12 +38,23 @@
                     <td>
                         <div class='tableColumn'>
                             <form action="checkoutconfirmation.php" method="post">
-                                Card Number: <input type="text" name="" value="">
+                                Name*: <input type="text" name="" value="" required>
                                 <br>
-                                Expiration Date: <input type="month" name="" value="">
+                                Address*: <input type="text" name="" value="" required>
                                 <br>
-                                CVV: <input type="text" name="" value="">
+                                City*: <input type="text" name="" value="" required>
                                 <br>
+                                State*: <input type="text" name="" value="" required>
+                                <br>
+                                ZIP Code*: <input type="numeric" name="" value="" required>
+                                <br><br>
+                                Card Number*: <input type="tel" minlength="19" maxlength="19" placeholder="xxxx xxxx xxxx xxxx" pattern="[0-9\s]{13,19}" name="" value="" required>
+                                <br>
+                                Expiration Date*: <input type="month" name="" value="" required>
+                                <br>
+                                CVV*: <input id="cvv" type="numeric" minlength="3" maxlength="3" name="" value="" required>
+                                <br>
+                                Email Address*: <input type="email" name="" value="" required>
                                 <button type="submit" name="submit" value="<?php echo $_POST["totalPrice"] + (round($_POST["totalPrice"] * 0.06625, 2)) ?>">Submit</button>
                             </form>
                         </div>

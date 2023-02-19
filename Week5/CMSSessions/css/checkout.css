@@ -1,7 +1,7 @@
 html, body {
     background-color: rgb(210, 210, 210);
 
-    height: calc(100% - 0em);
+    height: calc(100% - 5em);
     margin: 0;
     padding: 0;
 }
@@ -18,7 +18,7 @@ html, body {
     text-align: center;
 }
 .content h2 {
-    margin-top: 3em;
+    margin-top: 1em;
     font-size: 3em;
 }
 .content table {
@@ -28,4 +28,33 @@ html, body {
 /*TableColumn*/
 .tableColumn {
     text-align: center;
+}
+.tableColumn form input {
+    width: 15em;
+    font-size: 1.25em;
+    margin: 0.5em;
+    padding: 0.25em;
+
+    border-radius: 0.5em;
+}
+.tableColumn button {
+    width: 5em;
+    font-size: 1.5em;
+
+    padding-top: 0.25em;
+    padding-bottom: 0.25em;
+    border-radius: 0.5em;
+
+    background-image: linear-gradient(to bottom, lightgrey, white);
+}
+.tableColumn button:hover {
+    background-color: darkgray;
+    background-image: none;
+}
+.tableColumn button:active {
+    background-color: grey;
+    background-image: none;
+}
+#cvv {
+    width:5em;
 }

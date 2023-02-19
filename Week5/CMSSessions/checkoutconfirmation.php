@@ -20,15 +20,16 @@
                 session_start();
                 if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
             ?>
+            <div class="confirmation">
+                <h1>Thank you for your order!</h1>
+                <h2>We will be in touch shortly regarding the next steps of your app(s).</h2>
+                <?php 
+                    $_SESSION["items"] = null; 
+                    $_SESSION["itemCount"] = 0;
+                ?>
 
-            <h1>Thank you for your order!</h1>
-            <h2>We will be in touch shortly regarding the next steps of your app(s).</h2>
-            <?php 
-                $_SESSION["items"] = null; 
-                $_SESSION["itemCount"] = 0;
-            ?>
-
-            <a href="index.php"><button name="back">Back</button></a>
+                <a href="index.php"><button name="back">Back</button></a>
+            </div>
 
             <?php
                 include "../../footer.php";

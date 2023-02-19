@@ -18,3 +18,27 @@ html, body {
     text-align: center;
 }
 
+/*Confirmation*/
+.confirmation {
+    flex: 1;
+
+    margin: 5em;
+}
+.confirmation a button {
+    width: 10em;
+    font-size: 2em;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+
+    background-image: linear-gradient(to bottom, lightgrey, white);
+}
+.confirmation a button:hover {
+    background-color: darkgray;
+    background-image: none;
+}
+.confirmation a button:active {
+    background-color: grey;
+    background-image: none;
+}
