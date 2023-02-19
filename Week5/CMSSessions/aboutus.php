@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>About Us</title>
+        <meta name="description" content="MyTech Co. Ltd. is a sofware development studio with a focus on creating innovative and responsive mobile applications.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

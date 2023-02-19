@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>MyTech Co. Ltd. Home</title>
+        <meta name="description" content="MyTech Co. offers a range of high-quality offerings that can be viewed from our Products page.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

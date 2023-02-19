@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Help Center</title>
+        <meta name="description" content="We receive certain questions many times, and so we have compiled all the answers to these and more in our FAQ.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Mission</title>
+        <meta name="description" content="Software development is a tough business. We know this as well as anyone. There are hundreds of other companies that you could turn to in order to create your dream app.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

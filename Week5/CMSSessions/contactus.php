@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Contact Us</title>
+        <meta name="description" content="If you have any questions, feel free to ask them here.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

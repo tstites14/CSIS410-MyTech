@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Our Socials</title>
+        <meta name="description" content="Connect with us on social media, where you can find great offers and provide feedback.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Corporate Responsibility</title>
+        <meta name="description" content="We have donated to the Water Project to provide water to struggling communities in Africa.">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">

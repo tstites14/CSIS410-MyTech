@@ -2,6 +2,7 @@
 <html lang="en-US">
     <head>
         <title>Testimonials</title>
+        <meta name="description" content="My small business contacted MyTech Co. to work on an app for my business and their work was excellent. They worked with us to create a high-quality application and we would love to work with them again!">
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
