@@ -21,7 +21,7 @@
 
         <?php
             include "../../footer.php";
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek5%2FCMSSessions%2Fcorporateresponsibility.php', __FILE__);
         ?>
     </body>
 </html>

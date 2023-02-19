@@ -12,14 +12,13 @@
         <?php include "cartitems.php"; ?>
     </head>
     <body>
+        <!--Prevents any HTML from showing unless "auth" is set-->
+        <?php 
+            session_start();
+            if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
+        ?>
         <div class="content">
             <?php include "header.php"; ?>
-
-            <!--Prevents any HTML from showing unless "auth" is set-->
-            <?php 
-                session_start();
-                if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
-            ?>
 
             <table>
                 <colgroup>
@@ -65,7 +64,7 @@
 
         <?php
             include "../../footer.php";
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek5%2FCMSSessions%2Fcheckout.php', __FILE__);
         ?>
 
         <!--If "auth" is not set, show alert box and redirect back to login page-->

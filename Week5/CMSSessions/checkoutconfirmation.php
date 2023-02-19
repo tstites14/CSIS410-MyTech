@@ -12,14 +12,13 @@
         <?php include "cartitems.php"; ?>
     </head>
     <body>
+        <!--Prevents any HTML from showing unless "auth" is set-->
+        <?php 
+            session_start();
+            if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
+        ?>
         <div class="content">
             <?php include "header.php"; ?>
-
-            <!--Prevents any HTML from showing unless "auth" is set-->
-            <?php 
-                session_start();
-                if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
-            ?>
             <div class="confirmation">
                 <h1>Thank you for your order!</h1>
                 <h2>We will be in touch shortly regarding the next steps of your app(s).</h2>
@@ -33,7 +32,7 @@
 
             <?php
                 include "../../footer.php";
-                footer('', __FILE__);
+                footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek5%2FCMSSessions%2Fcheckoutconfirmation.php', __FILE__);
             ?>
         </div>
 
