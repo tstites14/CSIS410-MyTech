@@ -32,7 +32,6 @@
                 $this->connection->close();
                 return "Error: " . strval(mysqli_connect_errno());
             }
-
         }
 
         function selectData(string $select, string $from, string $where = "", string $whereCondition = "", string $order = "", string $orderType = "DESC") {
@@ -46,8 +45,18 @@
             return $result;
         }
 
-        function deleteData(string $select, string $from, string $where, string $whereCondition) {
-            return $this->queryDB("DELETE $select FROM $from WHERE $where = $whereCondition");
+        function updateData(string $from, string $where, string $whereCondition, $newData) {
+            $selectData = $this->queryDB("SELECT id FROM $from WHERE $where = '" . $whereCondition ."'");
+            $id = $selectData->fetch_assoc()["id"];
+
+            return $this->queryDB("UPDATE $from SET title = '" . $newData["title"] . "', comments = '" . $newData["comments"] . "', commentdate = NOW() WHERE id = $id");
+        }
+
+        function deleteData(string $from, string $where, string $whereCondition) {
+            $selectData = $this->queryDB("SELECT id FROM $from WHERE $where = '" . $whereCondition . "'");
+            $id = $selectData->fetch_assoc()["id"];
+
+            return $this->queryDB("DELETE FROM $from WHERE id = $id");
         }
 
         function insertData(string $into, $name, $title, $comments) {

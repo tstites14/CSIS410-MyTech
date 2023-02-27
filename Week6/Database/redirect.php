@@ -6,7 +6,6 @@
     $account = "";
     if (isset($_POST["username"]) && isset($_POST["password"])) {
         foreach ($accounts as $curAccount) {
-            echo $curAccount->get_username();
             if ($curAccount->get_username() == $_POST["username"] && $curAccount->get_password() == $_POST["password"]) {
                 $account = $curAccount;
 
