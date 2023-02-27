@@ -94,7 +94,7 @@
 
         <?php 
             include "../../footer.php";
-            footer('', __FILE__);
+            footer('http://tstites.com/Week6/Database/existingcomments.php', __FILE__);
         ?>
         <?php
             } else {

@@ -19,9 +19,9 @@
 
             <div class="formData">
                 <form action="dbupdate.php" method="post">
-                    Name: <input class='textbox' type="text" name="name" value=<?php echo $_POST["name"] ?>>
+                    Name: <input class='textbox' type="text" name="name" value="<?php echo $_POST["name"] ?>">
                     <br>
-                    Title: <input class='textbox' type="text" name="title" value=<?php echo $_POST["title"] ?>>
+                    Title: <input class='textbox' type="text" name="title" value="<?php echo $_POST["title"] ?>">
                     <br>
                     Comments: <textarea id="comments" rows="5" cols="35" name="comments"><?php echo $_POST["comments"] ?></textarea>
                     <br>
@@ -32,7 +32,7 @@
         </div>
         <?php 
             include "../../footer.php";
-            footer('', __FILE__);
+            footer('https://validator.w3.org/nu/?doc=http%3A%2F%2Ftstites.com%2FWeek6%2FDatabase%2Fupdatecomments.php', __FILE__);
         ?>
         <?php
             } else {
