@@ -1,0 +1,34 @@
+html, body {
+    background-color: rgb(210, 210, 210);
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    height: calc(100% - 19.75em);
+    margin: 0;
+    padding: 0;
+}
+
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(210, 210, 210);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1;
+    margin-top: 5em;
+
+    text-align: center;
+}
+.content p {
+    font-size: 1.25em;
+}
+.text p {
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 1.25em;
+}

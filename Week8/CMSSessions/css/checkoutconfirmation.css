@@ -1,0 +1,44 @@
+html, body {
+    background-color: rgb(210, 210, 210);
+
+    height: calc(100% - 0em);
+    margin: 0;
+    padding: 0;
+}
+
+/*Content*/
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(210, 210, 210);
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+    text-align: center;
+}
+
+/*Confirmation*/
+.confirmation {
+    flex: 1;
+
+    margin: 5em;
+}
+.confirmation a button {
+    width: 10em;
+    font-size: 2em;
+
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 0.5em;
+
+    background-image: linear-gradient(to bottom, lightgrey, white);
+}
+.confirmation a button:hover {
+    background-color: darkgray;
+    background-image: none;
+}
+.confirmation a button:active {
+    background-color: grey;
+    background-image: none;
+}
