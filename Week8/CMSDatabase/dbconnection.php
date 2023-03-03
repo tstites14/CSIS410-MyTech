@@ -34,11 +34,11 @@
             }
         }
 
-        function select(string $select, string $from, string $where = "", string $whereCondition = "", string $order = NULL, string $orderType = "DESC") {
+        function select(string $select, string $from, string $where = NULL, string $whereCondition = NULL, string $order = NULL, string $orderType = "DESC") {
             if (isset($where) && isset($whereCondition) && !isset($order)) {
                 $result = $this->queryDB("SELECT $select FROM $from WHERE $where = '$whereCondition'");
             }
-            else if (!empty($where) && !empty($whereCondition) && isset($order)) {
+            else if (isset($where) && isset($whereCondition) && isset($order)) {
                 $result = $this->queryDB("SELECT $select FROM $from WHERE $where = '$whereCondition' ORDER BY $order $orderType");
             }
             else {
