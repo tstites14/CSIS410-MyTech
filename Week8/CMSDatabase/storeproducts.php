@@ -15,8 +15,50 @@
             session_start();
             if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) { 
         ?>
+        <?php 
+
+        ?>
         <div class="content">
-            <?php include "header.php"; ?>
+            <?php 
+                include "header.php";
+                include "dbconnection.php";
+
+                function generateProducts() {
+                    $db = new DBConnection();
+                    $items = $db->select("*", "storeitems");
+
+                    $i = 0;
+                    while ($row = $items->fetch_assoc()) {
+                        //Get all the image urls from the imageurl field
+                        $imgs = explode(",", $row["imageurl"]);
+
+                        if ($i == 0)
+                            echo "<tr>";
+
+                        echo "<td>";
+                        echo    "<div class='tableColumn'>";
+                        foreach ($imgs as $img)
+                            echo    "<img src=$img alt=''>";
+                        echo        "<h3>" . $row["title"] . "</h3>";
+                        echo        '<form action="shoppingcart.php" method="post">';
+                        echo            '<button type="submit" name="newProduct" value=' . $row["id"] . '>Add to Cart</button>';
+                        echo        "</form>";
+                        echo    "</div>";
+                        echo "</td>";
+
+                        if ($i == 2) {
+                            echo "</tr>";
+                            $i = 0;
+                        } else {
+                            $i++;
+                        }
+                    }
+
+                    if ($i != 0) {
+                        echo "</tr>";
+                    }
+                }
+            ?>
             <h2>Our Products</h1>
             <div class='checkout'>
                 <p>
@@ -38,112 +80,7 @@
                     <col span="1" style="width: 33%;">
                 </colgroup>
 
-                <tr>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
-                            <h3>Android App</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="a1-500">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>iOS App</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i1-500">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg' alt="Android development">
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>Android and iOS App</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c1-800">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
-                            <h3>Priority Support for Android Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="a2-350">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>Priority Support for iOS Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i2-350">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>Priority Support for Android and iOS Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c2-350">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
-                            <h3>Additional Updates for Android Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="a3-400">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>Additional Updates for iOS Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="i3-400">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Android_logo_2019_%28stacked%29.svg" alt="Android development">
-                            <img src='https://upload.wikimedia.org/wikipedia/commons/6/63/IOS_wordmark_%282017%29.svg' alt="iOS development">
-                            <h3>Additional Updates for Android and iOS Apps</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="c3-750">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td>
-                        <div class='tableColumn'>
-                            <img src="img/tshirt.png" alt="T-shirt">
-                            <h3>MyTech Co. T-shirt</h3>
-                            <form action="shoppingcart.php" method="post">
-                                <button type="submit" name="newProduct" value="s4-30">Add to cart</button>
-                            </form>
-                        </div>
-                    </td>
-                    <td></td>
-                </tr>
+                <?php generateProducts(); ?>
             </table>
         </div>
 
