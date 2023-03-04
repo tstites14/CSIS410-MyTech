@@ -74,6 +74,7 @@
             foreach ($contents as $item) {
                 $insertData += $item . "', '";
             }
+            unset($item);
             $insertData = substr($insertData, 0, -4);
 
             return $this->queryDB("INSERT INTO $into VALUES (0, '$insertData')");

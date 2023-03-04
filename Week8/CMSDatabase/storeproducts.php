@@ -40,8 +40,8 @@
                         foreach ($imgs as $img)
                             echo    "<img src=$img alt=''>";
                         echo        "<h3>" . $row["title"] . "</h3>";
-                        echo        '<form action="shoppingcart.php" method="post">';
-                        echo            '<button type="submit" name="newProduct" value=' . $row["id"] . '>Add to Cart</button>';
+                        echo        '<form action="shoppingcart.php" method="get">';
+                        echo            '<button type="submit" name="newProduct" value="' . $row["id"] . '">Add to Cart</button>';
                         echo        "</form>";
                         echo    "</div>";
                         echo "</td>";

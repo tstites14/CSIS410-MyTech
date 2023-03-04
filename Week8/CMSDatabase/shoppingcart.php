@@ -23,7 +23,8 @@
             <h1>Shopping Cart</h1>
 
             <?php
-                if (isset($_POST["newProduct"])) {
+                //Counter on storeproducts.php
+                if (isset($_GET["newProduct"])) {
                     //Increment itemCount
                     if (isset($_SESSION["itemCount"]))
                         $_SESSION["itemCount"]++;
@@ -35,16 +36,16 @@
             <ul>
                 <?php 
                     $cart = new ShoppingCart();
-                    if (isset($_POST["newProduct"]))
-                        $cart->add_item(new CartItem($_POST["newProduct"]));
+                    if (isset($_GET["newProduct"])) {
+                        $cart->add_item(new CartItem($_GET["newProduct"]));
+                        $cart->save_state();
+                    }
 
                     $items = $cart->get_items();
                     foreach ($items as $item) {
                         $cart->addNewItemHTML($item);
                     }
-
-                    if (isset($_POST["newProduct"]))
-                        $cart->save_state();
+                    unset($item);
                 ?>
             </ul>
             <hr>
