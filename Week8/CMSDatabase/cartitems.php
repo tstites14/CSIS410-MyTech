@@ -13,11 +13,8 @@
         }
 
         function add_item(CartItem $item) {
-            //echo count($this->items);
             array_push($this->items[], $item);
-            //echo count($this->items);
             $_SESSION["items"][] = serialize($item);
-            //echo count($_SESSION["items"]);
         }
 
         function get_items(): array {
@@ -25,15 +22,22 @@
         }
 
         public function addNewItemHTML($item) {
-            echo "<li>";
-            echo    "<div class='cartEntry'>";
+            echo "<tr class='cartEntry'>";
+            echo    "<td>";
             echo        "<img src='" . $item->get_imgUrl()[0] . "' alt='Product image' draggable=". '"false"' . ">";
             if (isset($item->get_imgUrl()[1]))
                 echo    "<img src='" . $item->get_imgUrl()[1] . "' alt='Product image' draggable='false'>";
+            echo    "</td>";
+            echo    "<td>";
             echo        "<p id='name'>" . $item->get_name() . "</p>";
+            echo    "</td>";
+            echo    "<td>";
             echo        "<p id='price'>$" . $item->get_price();
-            echo    "</div>";
-            echo "</li>";
+            echo    "</td>";
+            echo    "<td>";
+            echo        "<a href='cartdelete.php?itemID=" . $item->get_id() . "'><img src='img/delete.svg' alt='Remove Item from Cart' draggable='false'></a>";
+            echo    "</td>";
+            echo "</tr>";
         }
 
         function save_state() {

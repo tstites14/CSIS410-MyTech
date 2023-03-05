@@ -26,14 +26,24 @@
                 //Counter on storeproducts.php
                 if (isset($_GET["newProduct"])) {
                     //Increment itemCount
-                    if (isset($_SESSION["itemCount"]))
+                    if (isset($_SESSION["itemCount"]) && $_SESSION["itemCount"] >= 0)
                         $_SESSION["itemCount"]++;
-                    else
+                    else if (!isset($_SESSION["itemCount"]))
                         $_SESSION["itemCount"] = 1;
+                    else if ($_SESSION["itemCount"] <= 0) {
+                        $_SESSION["itemCount"] = 0;
+                    }
                 }
             ?>
                     
-            <ul>
+            <table>
+                <colgroup>
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 70%;">
+                    <col span="1" style="width: 10%;">
+                    <col span="1" style="width: 10%;">
+                </colgroup>
+
                 <?php 
                     $cart = new ShoppingCart();
                     if (isset($_GET["newProduct"])) {
@@ -47,7 +57,7 @@
                     }
                     unset($item);
                 ?>
-            </ul>
+            </table>
             <hr>
             <p>
                 <?php 

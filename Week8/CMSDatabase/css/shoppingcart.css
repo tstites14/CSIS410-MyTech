@@ -26,9 +26,10 @@ html, body {
     margin-top: 1em;
     font-size: 3em;
 }
-.content ul {
+.content table {
     flex: 1;
     margin-top: 5em;
+    margin-left: 10%;
 }
 .content > ul li {
     margin: 0;
@@ -62,15 +63,11 @@ html, body {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.cartEntry img {
+.cartEntry td img {
     width: 5em;
     padding-right: 1em;
     float:left;
 }
-.cartEntry p {
+.cartEntry td p {
     font-size: 1.5em;
-}
-#name {
-    float: left;
-    margin-left: 30%;
 }
