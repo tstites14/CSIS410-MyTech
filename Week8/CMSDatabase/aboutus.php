@@ -12,13 +12,24 @@
     </head>
     <body>
         <div class='content'>
-            <?php include "header.php"; ?>
+        <?php 
+            include "header.php"; 
+            include "dbconnection.php";
+
+            function generateAboutUs() {
+                $db = new DBConnection();
+                $aboutUs = $db->select("text", "aboutus");
+
+                while ($row = $aboutUs->fetch_assoc()) {
+                    echo "<p>" . $row["text"] . "</p>";
+                    echo "<br>";
+                }
+            }
+        ?>
 
             <div class='text'>
                 <h1>About Us</h1>
-                <p>MyTech Co. Ltd. is a sofware development studio with a focus on creating innovative and responsive mobile applications. Our mission is to provide our clients with professional mobile applications that suit their vision for their organization.</p>
-                <br>
-                <p>Based in San Francisco, California, MyTech Co. Ltd. is prepared to create professional software based on your own ideas. Our team of developers look forward to receiving your inquiry about our services!</p>
+                <?php generateAboutUs(); ?>
             </div>
 
             <?php 
