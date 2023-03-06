@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <title>About Us</title>
-        <meta name="description" content="MyTech Co. Ltd. is a sofware development studio with a focus on creating innovative and responsive mobile applications.">
+        <title>Add New Data</title>
         <meta charset="utf-8">
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -16,22 +15,29 @@
             include "header.php"; 
             include "dbconnection.php";
 
-            function generateAboutUs() {
-                $db = new DBConnection();
-                $aboutUs = $db->select("text", "aboutus");
+            $db = new DBConnection();
 
-                while ($row = $aboutUs->fetch_assoc()) {
-                    echo "<p>" . $row["text"] . "</p>";
-                    echo "<br>";
-                }
+            function insert() {
+
+            }
+
+            if (isset($_POST["inserted"])) {
+                //Data has been entered
+                $contents = array($_POST["text"]);
+
+                $db->insert($_POST["table"], $contents);
+                echo "<script>window.location.href='index.php'</script>";
             }
         ?>
 
             <div class='text'>
-                <h1>About Us</h1>
-                <?php generateAboutUs(); ?>
+                <h1>Add New Data</h1>
                 <form action="dbinsert.php" method="post">
-                    <button class='button' type='submit' name='submit' value="aboutus"><img src='img/add.svg'></button>
+                    <input type="text" name="title">
+                    <br>
+                    <input type="text" name="text" value="">
+                    <input type="hidden" name="table" value="<?php echo $_POST["submit"]; ?>">
+                    <button type="submit" name="inserted" value="submit">Submit</button>
                 </form>
             </div>
 

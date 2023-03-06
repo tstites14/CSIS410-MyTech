@@ -72,7 +72,7 @@
         function insert(string $into, $contents) {
             $insertData = "";
             foreach ($contents as $item) {
-                $insertData += $item . "', '";
+                $insertData = $insertData . $item . "', '";
             }
             unset($item);
             $insertData = substr($insertData, 0, -4);
