@@ -17,10 +17,6 @@
 
             $db = new DBConnection();
 
-            function insert() {
-
-            }
-
             if (isset($_POST["inserted"])) {
                 //Data has been entered
                 $contents = array($_POST["text"]);
