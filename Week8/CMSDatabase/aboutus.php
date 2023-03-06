@@ -18,18 +18,33 @@
 
             function generateAboutUs() {
                 $db = new DBConnection();
-                $aboutUs = $db->select("text", "aboutus");
+                $aboutUs = $db->select("*", "aboutus");
 
                 while ($row = $aboutUs->fetch_assoc()) {
-                    echo "<p>" . $row["text"] . "</p>";
-                    echo "<br>";
+                    echo "<tr>";
+                    echo    "<td>";
+                    echo        "<p>" . $row["text"] . "</p>";
+                    echo    "</td>";
+                    echo    "<td>";
+                    echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "'><img src='img/create.svg'></a>";
+                    echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/delete.svg'></a>";
+                    echo    "</td>";
+                    echo "</tr>";
                 }
             }
         ?>
 
             <div class='text'>
                 <h1>About Us</h1>
-                <?php generateAboutUs(); ?>
+                <table>
+                    <colgroup>
+                        <col span="1" style="width: 80%">
+                        <col span="1" style="width: 20%">
+                    </colgroup>
+
+                    <?php generateAboutUs(); ?>
+                </table>
+
                 <form action="dbinsert.php" method="post">
                     <button class='button' type='submit' name='submit' value="aboutus"><img src='img/add.svg'></button>
                 </form>
