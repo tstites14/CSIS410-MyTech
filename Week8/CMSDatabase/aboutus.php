@@ -26,7 +26,7 @@
                     echo        "<p>" . $row["text"] . "</p>";
                     echo    "</td>";
                     echo    "<td>";
-                    echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "'><img src='img/create.svg'></a>";
+                    echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/create.svg'></a>";
                     echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/delete.svg'></a>";
                     echo    "</td>";
                     echo "</tr>";

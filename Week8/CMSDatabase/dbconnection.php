@@ -48,22 +48,16 @@
             return $result;
         }
 
-        function update(string $from, string $where, string $whereCondition, $fieldNames, $newData) {
-            echo "Before ID:, ";
-            echo "SELECT id FROM $from WHERE $where = '" . $whereCondition ."'";
-            $selectData = $this->queryDB("SELECT id FROM $from WHERE $where = '" . $whereCondition ."'");
-            $id = $selectData->fetch_assoc()["id"];
-
-            echo "GET ID " . $id . ", ";
-            /*$updateData = "";
+        function update(string $from, string $where, string $whereCondition, array $fieldNames, array $newData) {
+            $updateData = "";
             $length = count($newData);
             for ($i = 0; $i < $length; $i++) {
-                $updateData += $fieldNames[$i] . " = '$newData[$i]', ";
+                $updateData = $updateData . $fieldNames[$i] . " = " . "'$newData[$i]'" . ", ";
+                echo "|" . $updateData . "|";
             }
             $updateData = substr($updateData, 0, -2);
 
-            echo "UPDATE $from SET $updateData WHERE id = $id";*/
-            //return $this->queryDB("UPDATE $from SET $updateData WHERE id = $id");
+            return $this->queryDB("UPDATE $from SET $updateData WHERE $where = $whereCondition");
         }
 
         function delete(string $from, string $where, string $whereCondition) {
