@@ -29,7 +29,7 @@
                     echo    "</td>";
                     if ((int)$_SESSION["authlevel"] > 1) {
                         echo    "<td>";
-                        echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "faq" . "'><img src='img/create.svg'></a>";
+                        echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "faq" . "&content=" . $row["text"] . "'><img src='img/create.svg'></a>";
                         if ((int)$_SESSION["authlevel"] > 2) {
                             echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "faq" . "'><img src='img/delete.svg'></a>";
                         }
