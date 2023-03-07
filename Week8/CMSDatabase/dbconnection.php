@@ -41,6 +41,9 @@
             else if (isset($where) && isset($whereCondition) && isset($order)) {
                 $result = $this->queryDB("SELECT $select FROM $from WHERE $where = '$whereCondition' ORDER BY $order $orderType");
             }
+            else if (!isset($where) && !isset($whereCondition) && isset($order)) {
+                $result = $this->queryDB("SELECT $select FROM $from ORDER BY $order $orderType");
+            }
             else {
                 $result = $this->queryDB("SELECT $select FROM $from");
             }
