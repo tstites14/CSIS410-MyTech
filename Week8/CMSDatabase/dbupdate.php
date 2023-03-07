@@ -29,7 +29,7 @@
             ?>
 
             <div class='text'>
-                <h1>Add New Data</h1>
+                <h1>Modify Existing Data</h1>
 
                 <form action="dbupdate.php" method="post">
                     <input type="text" name="title">
