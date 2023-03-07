@@ -52,7 +52,7 @@
                 </table>
             <?php 
                 if ((int)$_SESSION["authlevel"] > 2) {
-                    echo "<form action='dbinsert.php' method='post'>";
+                    echo "<form action='dbinsert.php?title=true' method='post'>";
                     echo    "<button class='button' type='submit' name='submit' value='testimonials'><img src='img/add.svg'></button>";
                     echo "</form>";
                 }

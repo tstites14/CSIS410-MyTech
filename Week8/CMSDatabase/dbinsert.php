@@ -6,7 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="css/header.css">
         <link rel="stylesheet" type="text/css" href="css/menu.css">
-        <link rel="stylesheet" type="text/css" href="css/aboutus.css">
+        <link rel="stylesheet" type="text/css" href="css/dbinsert.css">
         <link rel="stylesheet" type="text/css" href="../../footer.css">
     </head>
     <body>
@@ -34,10 +34,17 @@
             <div class='text'>
                 <h1>Add New Data</h1>
                 <form action="dbinsert.php" method="post">
-                    <input type="text" name="title">
+                    <?php 
+                        if (isset($_GET["title"])) {
+                            echo "Title: <input type='text' name='title'>";
+                        } else {
+                            echo "Title: <input type='text' name='title' disabled>";
+                        }
+                    ?>
                     <br>
-                    <input type="text" name="text" value="">
+                    Content: <input type="text" name="text" value="">
                     <input type="hidden" name="table" value="<?php echo $_POST["submit"]; ?>">
+                    <br>
                     <button type="submit" name="inserted" value="submit">Submit</button>
                 </form>
             </div>
