@@ -1,4 +1,6 @@
 <nav>
+    <?php session_start(); ?>
+
     <ul class='navbar'>
         <li><a href="index.php">Home</a></li>
         <li><a href="aboutus.php">About Us</a>
@@ -13,5 +15,9 @@
         <li><a href="helpcenter.php">Help Center</a></li>
         <li><a href="testimonials.php">Testimonials</a></li>
         <li><a href="oursocials.php">Our Socials</a></li>
+        <?php 
+            if (!isset($_SESSION["authlevel"]))
+                echo "<li><a href='login.php'>Log In</a></li>"
+        ?>
     </ul>
 </nav>
