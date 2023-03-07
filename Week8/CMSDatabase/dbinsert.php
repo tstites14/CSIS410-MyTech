@@ -19,7 +19,12 @@
 
             if (isset($_POST["inserted"])) {
                 //Data has been entered
-                $contents = array($_POST["text"]);
+                if (isset($_POST["title"]) && $_POST["title"] != NULL) {
+                    $contents = array($_POST["title"], $_POST["text"]);
+                } else {
+                    $contents = array($_POST["text"]);
+                }
+
 
                 $db->insert($_POST["table"], $contents);
                 echo "<script>window.location.href='index.php'</script>";

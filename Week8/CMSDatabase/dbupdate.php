@@ -18,8 +18,12 @@
                 $db = new DBConnection();
 
                 if (isset($_POST["updated"])) {
-                    $db->update($_POST["table"], "id", $_POST["id"], array("text"), array($_POST["text"]));
-
+                    if (isset($_POST["title"])) {
+                        $db->update($_POST["table"], "id", $_POST["id"], array("text", "title"), array($_POST["text"], $_POST["title"]));
+                    } else {
+                        $db->update($_POST["table"], "id", $_POST["id"], array("text"), array($_POST["text"]));
+                    }
+    
                     echo "<script>window.location.href='index.php'</script>";
                 }
             ?>
