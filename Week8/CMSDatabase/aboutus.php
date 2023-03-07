@@ -16,6 +16,8 @@
             include "header.php"; 
             include "dbconnection.php";
 
+            session_start();
+
             function generateAboutUs() {
                 $db = new DBConnection();
                 $aboutUs = $db->select("*", "aboutus");
@@ -25,10 +27,14 @@
                     echo    "<td>";
                     echo        "<p>" . $row["text"] . "</p>";
                     echo    "</td>";
-                    echo    "<td>";
-                    echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/create.svg'></a>";
-                    echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/delete.svg'></a>";
-                    echo    "</td>";
+                    if ((int)$_SESSION["authlevel"] > 1) {
+                        echo    "<td>";
+                        echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/create.svg'></a>";
+                        if ((int)$_SESSION["authlevel"] > 2) {
+                            echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "aboutus" . "'><img src='img/delete.svg'></a>";
+                        }
+                        echo    "</td>";
+                    }
                     echo "</tr>";
                 }
             }
@@ -44,10 +50,13 @@
 
                     <?php generateAboutUs(); ?>
                 </table>
-
-                <form action="dbinsert.php" method="post">
-                    <button class='button' type='submit' name='submit' value="aboutus"><img src='img/add.svg'></button>
-                </form>
+                <?php 
+                    if ((int)$_SESSION["authlevel"] > 2) {
+                        echo "<form action='dbinsert.php' method='post'>";
+                        echo    "<button class='button' type='submit' name='submit' value='aboutus'><img src='img/add.svg'></button>";
+                        echo "</form>";
+                    }
+                ?>
             </div>
 
             <?php 
