@@ -8,8 +8,8 @@ html, body {
     padding: 0;
 }
 
-/*Content*/
-.content {
+/*Text*/
+.text {
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(210, 210, 210);
 
@@ -18,14 +18,37 @@ html, body {
     min-height: 100%;
 }
 
-.content {
+.text {
     flex: 1;
     margin-top: 5em;
 
     text-align: center;
 }
-.content p {
-    font-size: 1.25em;
+.text table tr td {
+    padding-right: 0;
+}
+.text table tr td p {
     margin-left: 30%;
-    margin-right: 30%;
+    margin-right: 10%;
+    font-size: 1.25em;
+}
+.text table tr td a img {
+    width: 3em;
+    padding-right: 1em;
+    height: 3em;
+}
+.text button {
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+
+    background-image: linear-gradient(to bottom, lightgrey, white);
+}
+.text button:hover {
+    background-color: darkgray;
+    background-image: none;
+}
+.text button:active {
+    background-color: grey;
+    background-image: none;
 }

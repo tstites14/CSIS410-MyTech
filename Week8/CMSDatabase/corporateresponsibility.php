@@ -15,21 +15,48 @@
             include "header.php"; 
             include "dbconnection.php";
 
+            session_start();
+
             function generateCR() {
                 $db = new DBConnection();
-                $cr = $db->select("text", "corporesponsibility");
+                $cr = $db->select("*", "corporesponsibility");
 
                 while ($row = $cr->fetch_assoc()) {
-                    echo "<p>" . $row["text"] . "</p>";
-                    echo "<br>";
+                    echo "<tr>";
+                    echo    "<td>";
+                    echo        "<p>" . $row["text"] . "</p>";
+                    echo    "</td>";
+                    if ((int)$_SESSION["authlevel"] > 1) {
+                        echo    "<td>";
+                        echo        "<a href='dbupdate.php?itemID=" . $row["id"] . "&table=" . "corporesponsibility" . "'><img src='img/create.svg'></a>";
+                        if ((int)$_SESSION["authlevel"] > 2) {
+                            echo        "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=" . "corporesponsibility" . "'><img src='img/delete.svg'></a>";
+                        }
+                        echo    "</td>";
+                    }
+                    echo "</tr>";
                 }
             }
         ?>
 
-        <div class='content'>
+        <div class='text'>
             <h1>Corporate Responsibility</h1>
             <h2>Our Donations</h2>
-            <?php generateCR(); ?>
+            <table>
+                    <colgroup>
+                        <col span="1" style="width: 80%">
+                        <col span="1" style="width: 20%">
+                    </colgroup>
+
+                    <?php generateCR(); ?>
+                </table>
+                <?php 
+                    if ((int)$_SESSION["authlevel"] > 2) {
+                        echo "<form action='dbinsert.php' method='post'>";
+                        echo    "<button class='button' type='submit' name='submit' value='corporesponsibility'><img src='img/add.svg'></button>";
+                        echo "</form>";
+                    }
+                ?>
         </div>
 
         <?php
