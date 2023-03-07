@@ -36,13 +36,13 @@
                 <form action="dbinsert.php" method="post">
                     <?php 
                         if (isset($_GET["title"])) {
-                            echo "Title: <input type='text' name='title'>";
+                            echo "Title: <input class='input' type='text' name='title'>";
                         } else {
-                            echo "Title: <input type='text' name='title' disabled>";
+                            echo "Title: <input class='input' type='text' name='title' disabled>";
                         }
                     ?>
                     <br>
-                    Content: <input type="text" name="text" value="">
+                    Content: <textarea class='input' type="text" name="text" rows="8" cols="64"><?php echo $_GET["content"] ?></textarea>
                     <input type="hidden" name="table" value="<?php echo $_POST["submit"]; ?>">
                     <br>
                     <button type="submit" name="inserted" value="submit">Submit</button>
