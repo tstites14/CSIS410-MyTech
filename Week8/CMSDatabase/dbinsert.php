@@ -47,6 +47,9 @@
                     <br>
                     <button type="submit" name="inserted" value="submit">Submit</button>
                 </form>
+                <form action="index.php" method="post">
+                    <button type="submit" name="submit" value="submit">Home</button>
+                </form>
             </div>
 
             <?php 
