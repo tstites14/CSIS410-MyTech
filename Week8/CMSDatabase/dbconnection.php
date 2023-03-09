@@ -67,7 +67,7 @@
             return $this->queryDB("DELETE FROM $from WHERE $where = $whereCondition");
         }
 
-        function insert(string $into, $contents) {
+        function insert(string $into, $contents, $fieldNames = NULL) {
             $insertData = "";
             foreach ($contents as $item) {
                 $insertData = $insertData . $item . "', '";
@@ -75,7 +75,13 @@
             unset($item);
             $insertData = substr($insertData, 0, -4);
 
-            return $this->queryDB("INSERT INTO $into VALUES (0, '$insertData')");
+            if ($fieldNames != NULL) {
+                return $this->queryDB("INSERT INTO $into ($fieldNames) VALUES (0, '$insertData')");
+            } else {
+                return $this->queryDB("INSERT INTO $into VALUES (0, '$insertData')");
+            }
+
+
         }
     }
 ?>

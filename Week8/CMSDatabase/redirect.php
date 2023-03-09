@@ -1,9 +1,10 @@
 <?php 
     include "accounts.php";
+    include_once "dbconnection.php";
 
     session_start();
     
-    $account = "";
+    $account = new Account("", "", 0);
     if (isset($_POST["username"]) && isset($_POST["password"])) {
         foreach ($accounts as $curAccount) {
             if ($curAccount->get_username() == $_POST["username"] && $curAccount->get_password() == $_POST["password"]) {
@@ -16,6 +17,9 @@
     }
 
     if (isset($_SESSION["authlevel"]) && $_SESSION["authlevel"] > 0) {
+        $db = new DBConnection();
+        $db->insert("loginhistory", array($account->get_accesslevel()), "id, loginlevel");
+
         redirectSecure();
     } else {
         redirectLogin();
