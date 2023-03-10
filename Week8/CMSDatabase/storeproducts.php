@@ -43,7 +43,12 @@
                         echo        '<form action="shoppingcart.php" method="get">';
                         echo            '<button type="submit" name="newProduct" value="' . $row["id"] . '">Add to Cart</button>';
                         echo        "</form>";
-                        echo    "</div>";
+                        if ((int)$_SESSION["authlevel"] > 1) {
+                            echo    "<a href='storeupdate.php?itemID=" . $row["id"] . "&title=" . $row["title"] . "&price=" . $row["price"] . "&checked=" . $row["itemtype"] . "&table=storeitems'><img class='adminButtons' src='img/create.svg' alt='Update existing product'></a>";
+                            if ((int)$_SESSION["authlevel"] > 2)
+                                echo    "<a href='dbdelete.php?itemID=" . $row["id"] . "&table=storeitems'><img class='adminButtons' src='img/delete.svg' alt='Delete existing product'></a>";
+                        }
+                        echo   "</div>";
                         echo "</td>";
 
                         if ($i == 2) {
@@ -53,8 +58,19 @@
                             $i++;
                         }
                     }
-
                     if ($i != 0) {
+                        if ((int)$_SESSION["authlevel"] > 1) {
+                            echo    "<td>";
+                            echo        "<a href='storeinsert.php?title=true&table=storeitems'><img class='adminButtons' src='img/add.svg' alt='Add new product'></a>";
+                            echo    "</td>";
+                        }
+                        echo "</tr>";
+                    } else {
+                        if ((int)$_SESSION["authlevel"] > 1) {
+                            echo    "<td>";
+                            echo        "<a href='storeinsert.php?title=true&table=storeitems'><img class='adminButtons' src='img/add.svg' alt='Add new product'></a>";
+                            echo    "</td>";
+                        }
                         echo "</tr>";
                     }
                 }

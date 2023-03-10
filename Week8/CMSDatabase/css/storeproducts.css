@@ -53,11 +53,16 @@ html, body {
 }
 
 /*TableColumn*/
+.adminButtons {
+    width:10%;
+
+    margin-top: 1em;
+}
 .tableColumn {
     text-align: center;
     margin-bottom: 5em;
 }
-.tableColumn img {
+.tableColumn > img {
     width: 25%;
     margin-bottom: 3em;
     margin: 1em;

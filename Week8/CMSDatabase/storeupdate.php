@@ -17,14 +17,11 @@
 
                 $db = new DBConnection();
 
-                if (isset($_POST["updated"])) {
-                    if (isset($_POST["title"])) {
-                        $db->update($_POST["table"], "id", $_POST["id"], array("text", "title"), array($_POST["text"], $_POST["title"]));
-                    } else {
-                        $db->update($_POST["table"], "id", $_POST["id"], array("text"), array($_POST["text"]));
-                    }
+                if (isset($_POST["updated"])) { {
+                    $db->update($_POST["table"], "id", $_POST["id"], array("title", "price", "itemtype"), array($_POST["title"], $_POST["price"], $_POST["itemtype"]));
+                }
     
-                    echo "<script>window.location.href='index.php'</script>";
+                echo "<script>window.location.href='storeproducts.php'</script>";
                 }
             ?>
 
@@ -34,7 +31,7 @@
                 <form action="storeupdate.php" method="post">
                     <?php 
                         if (isset($_GET["title"])) {
-                            echo "Title: <input class='input' type='text' name='title'>";
+                            echo "Title: <input class='input' type='text' name='title' value='" . $_GET["title"] . "' required>";
                         } else {
                             echo "Title: <input class='input' type='text' name='title' disabled>";
                         }
@@ -42,25 +39,45 @@
                     <br>
                     <fieldset>
                         <legend>Select the product type:</legend>
-                        <input type="radio" class="radio" name="android" value="Android">
-                        <label for="android">Android</label>
-                        <input type="radio" class="radio" name="iOS" value="iOS">
-                        <label for="iOS">iOS</label>
-                        <input type="radio" class="radio" name="combo" value="combo">
-                        <label for="combo">Combo</label>
-                        <input type="radio" class="radio" name="merchandise" value="Merchandise">
-                        <label for="merchandise">Merchandise</label>
+                        <?php 
+                            //Android
+                            if (isset($_GET["checked"]) && $_GET["checked"] == "Android")
+                                echo "<input type='radio' class='radio' name='itemtype' value='Android' checked='checked'>";
+                            else
+                                echo "<input type='radio' class='radio' name='itemtype' value='Android'>";
+                            echo "<label for='android'>Android</label>";
+
+                            //iOS
+                            if (isset($_GET["checked"]) && $_GET["checked"] == "iOS")
+                            echo "<input type='radio' class='radio' name='itemtype' value='iOS' checked='checked'>";
+                            else
+                                echo "<input type='radio' class='radio' name='itemtype' value='iOS'>";
+                            echo "<label for='iOS'>iOS</label>";
+
+                            //Combo
+                            if (isset($_GET["checked"]) && $_GET["checked"] == "Combo")
+                            echo "<input type='radio' class='radio' name='itemtype' value='Combo' checked='checked'>";
+                            else
+                                echo "<input type='radio' class='radio' name='itemtype' value='Combo'>";
+                            echo "<label for='combo'>Combo</label>";
+
+                            //Merchandise
+                            if (isset($_GET["checked"]) && $_GET["checked"] == "Merchandise")
+                            echo "<input type='radio' class='radio' name='itemtype' value='Merchandise' checked='checked'>";
+                            else
+                                echo "<input type='radio' class='radio' name='itemtype' value='Merchandise'>";
+                            echo "<label for='merchandise'>Merchandise</label>";
+                        ?>
                     </fieldset>
-                    <input type="hidden" name="table" value="<?php echo $_POST["submit"]; ?>">
                     <br>
-                    <input type="number" class="input" name="price" value="">
+                    Price: <input type="number" class="input" name="price" value="<?php echo $_GET["price"] ?>">
                     <br>
                     <input type="hidden" name="id" value="<?php echo $_GET["itemID"]; ?>">
                     <input type="hidden" name="table" value="<?php echo $_GET["table"]; ?>">
                     <button type="submit" name="updated" value="submit">Submit</button>
                 </form>
-                <form action="index.php" method="post">
-                    <button type="submit" name="submit" value="submit">Home</button>
+                <form action="storeproducts.php" method="post">
+                    <button type="submit" name="submit" value="submit">Back</button>
                 </form>
             </div>
 
