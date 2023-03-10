@@ -14,6 +14,17 @@
         <?php include "header.php"; ?>
 
         <div class='content'>
+            <?php 
+                include "dbconnection.php";
+                $db = new DBConnection();
+
+                $name = $_POST["name"];
+                $email = $_POST["email"];
+                $comments = $_POST["comments"];
+
+                $db->insert("contacts", array($name, $email, $comments));
+            ?>
+
             <h1>Contact Us</h1>
 
             <form onsubmit="alert('Thank you for your interest! We will respond as soon as we are able!')" method="post">
@@ -23,7 +34,7 @@
                 <br>
                 Comments*: <input class="textbox" type="text" name="comments" value="" required>
                 <br>
-                <input id="submit" type="submit">
+                <input id="submit" type="submit" name="submit" value="submit">
             </form>
         </div>
 
