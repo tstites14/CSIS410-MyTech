@@ -56,7 +56,6 @@
             $length = count($newData);
             for ($i = 0; $i < $length; $i++) {
                 $updateData = $updateData . $fieldNames[$i] . " = " . "'$newData[$i]'" . ", ";
-                echo "|" . $updateData . "|";
             }
             $updateData = substr($updateData, 0, -2);
 
